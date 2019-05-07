@@ -1,0 +1,143 @@
+.cor-navbar {
+	background-color: teal;
+}
+
+body {
+	background-color: #E5E8E8;
+	padding-top: 82px;
+}
+
+.nav-link {
+	color: rgb(0, 241, 255);
+}
+
+.fonte-nav {
+	font-family: "Arial", Sans-serif;
+	cor: #00fff5;
+}
+
+.fonte-marca {
+	font-family: "Arial", Sans-serif;
+	color: white;
+	font-size: 25px;
+}
+
+.box-shadow-white {
+	padding-bottom: 5px;
+	box-shadow: 0px 0px 20px white;
+}
+
+.box-shadow-black {
+	padding-bottom: 5px;
+	box-shadow: 0px 0px 20px black;
+}
+
+.cor-teal {
+	background-color: teal;
+}
+
+.fonte-footer-conteudo {
+	font-family: "Arial", Sans-serif;
+	color: white;
+	font-size: 15px;
+}
+
+.fonte-footer-titulo {
+	font-family: "Arial", Sans-serif;
+	color: white;
+	font-size: 18px;
+}
+
+.cor-branca {
+	background-color: white;
+}
+
+.fonte-footer-teal {
+	font-family: "Arial", Sans-serif;
+	color: teal;
+	font-size: 14px;
+}
+
+.fonte-carousel {
+	text-shadow: 0 0 0.2em black;
+}
+
+.tamanho-fixo-imagem-redes-sociais {
+	max-width: 30px;
+	max-height: 30px;
+}
+
+.tamanho-fixo-imagem-forma-pagamento {
+	max-width: 40px;
+	max-height: 55px;
+}
+
+.tamanho-fixo-imagem-nav {
+	max-width: 40px;
+	max-height: 55px;
+}
+
+@media ( max-width : 768px) {
+	body {
+		padding-top: 0px;
+	}
+	.fixed-top {
+		position: relative;
+	}
+}
+
+.tamanho-fixo-imagem-login {
+	max-width: 50px;
+	max-height: 50px;
+}
+
+a:link {
+	color: #9bf0e1;
+}
+
+a:hover {
+	color: #9bf0e1;
+	/*9bf0e1*/
+}
+
+#link {
+	color: teal;
+}
+
+.tamanho-imagem-produto {
+	width: 250px;
+	height: 350px;
+}
+
+.tamanho-carousel-produto {
+	max-height: 500px;
+}
+
+.fonte-teal-h1 {
+	font-family: "Arial", Sans-serif;
+	color: teal;
+	font-size: 30px;
+	font-weight: 2px
+}
+
+.fonte-teal-preco {
+	font-family: "Arial", Sans-serif;
+	color: teal;
+	font-size: 20px;
+}
+
+.link-teal {
+	color: teal;
+}
+
+.link-teal:hover {
+	color: teal;
+}
+
+label {
+	font-weight: bold;
+}
+
+.imagem-icone-edicao {
+	width: 20px;
+}
