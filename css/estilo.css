@@ -3,7 +3,8 @@
 }
 
 body {
-	background-color: #E5E8E8;
+	/*background-color: #E5E8E8;*/
+	background-color: white;
 	padding-top: 82px;
 }
 
@@ -141,3 +142,10 @@ label {
 .imagem-icone-edicao {
 	width: 20px;
 }
+
+.fonte-teal-categoria {
+	font-family: "Arial", Sans-serif;
+	color: teal;
+	font-size: 15px;
+}
+
