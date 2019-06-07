@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Página inicial - E-commerce</title>
+    <link rel="icon" href="imagens/logo-2.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <link rel="stylesheet" type="icon" href="imagens/logo-2.png">
+    <link rel="stylesheet" type="text/css" href="css/glyphicon.css">
+
+
+</head>
+
+<body>
+    <!-- Modal de usuário -->
+
+    <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Área do cliente</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, explicabo!.</p>
+                </div>
+                <div class="modal-footer">
+                    <div class="col-6">
+                        <a href="login.html">
+                            <button type="button" class="btn cor-teal text-white w-100">Login</button>
+                        </a>
+                    </div>
+                    <div class="col-6">
+                        <a href="cadastro-cliente.html">
+                            <button type="button" class="btn cor-teal text-white w-100">Cadastrar</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fim do modal-->
+
+    <!-- Menu de navegação do site -->
+    <nav class="navbar navbar-expand-md navbar-dark cor-navbar py-3 fixed-top box-shadow-white">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <img src="imagens/logo-2.png" alt="Logo" width="40" height="40" class="rounded-circle d-inline-block align-top mx-3"><strong class="mx-1 d-inline-block align-top">E-commerce.com</strong>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto text-white">
+                    <!-- 
+                <li class="nav-item">
+                    <a class="nav-link mx-3"href="cadastro-cliente.html"><strong>Cadastrar</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-3 fonte"href="login.html"><strong>Logar</strong></a>
+                </li>
+            -->
+                    <li class="nav-item ">
+                        <a href="#"><img src="imagens/carrinho-compra.png" alt="usuario" class="tamanho-fixo-imagem-nav mx-3">
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="#"><img src="imagens/usuario.png" alt="usuario" class="tamanho-fixo-imagem-nav mx-3" data-toggle="modal" data-target=".bd-example-modal-sm">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Fim do menu de navegação -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <div class="my-5">
+                        <h1 class="h1">Meu carrinho<span class="glyphicon glyphicon-shopping-cart ml-1"></span></h1>
+                        <div class="form-group row my-5">
+                            <label class="col-md-3 col-form-label">Calcule o frete</label>
+                            <div class="col-md-3">
+                                <input type="text" class="form-control" placeholder="00000-000">
+                            </div>
+                            <div class="col-md-2">
+                                <input type="button" class="form-control" value="OK">
+                            </div>
+                        </div>
+                        <table class="table my-5">
+                            <caption>List of users</caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Produto</th>
+                                    <th scope="col">Nome</th>
+                                    <th scope="col">Qtd.</th>
+                                    <th scope="col">Preço</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Mark</td>
+                                    <td>TV LG</td>
+                                    <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                    <td>Jacob</td>
+                                    <td>Playstation 4</td>
+                                    <td>@fat</td>
+                                </tr>
+                                <tr>
+                                    <td>Larry</td>
+                                    <td>the Bird</td>
+                                    <td>@twitter</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Rodapé do site-->
+    <footer class="cor-teal py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-6">
+                    <label class="h5 text-white"><strong>Dúvidas Frequentes</strong></label>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="fonte-footer-conteudo">Como pagar</a></li>
+                        <li><a href="#" class="fonte-footer-conteudo">Fale conosco</a></li>
+                        <li><a href="#" class="fonte-footer-conteudo">Trocas e devoluções</a></li>
+                        <li><a href="#" class="fonte-footer-conteudo">Sobre entrega</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-4 col-6">
+                    <label for="" class="h5 text-white"><strong>Formas de Pagamento</strong></label>
+                    <ul class="list-unstyled">
+                        <li>
+                            <img src="icones/visa.png" alt="visa" class="tamanho-fixo-imagem-forma-pagamento"><label for="" class="fonte-footer-conteudo mx-1">Visa</label>
+                        </li>
+                        <li><img src="icones/mastercard.png" alt="mastercard" class="tamanho-fixo-imagem-forma-pagamento"><label for="" class="fonte-footer-conteudo mx-1">Mastercard</label></li>
+                        <li>
+                            <img src="icones/paypal.png" alt="paypal" class="tamanho-fixo-imagem-forma-pagamento"><label for="" class="fonte-footer-conteudo mx-1">Paypal</label>
+                        </li>
+                        <li>
+                            <img src="icones/citibank.png" alt="citibank" class="tamanho-fixo-imagem-forma-pagamento"><label for="" class="fonte-footer-conteudo mx-1">Citibank</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-4 col-6">
+                    <label for="" class="h5 text-white"><strong>Redes Sociais</strong>
+
+                    </label>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="https://www.facebook.com">
+                                <img src="icones/facebook.png" alt="facebook" class="tamanho-fixo-imagem-redes-sociais">
+                                <label class="fonte-footer-conteudo mx-1">Facebook</label>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.twitter.com">
+                                <img src="icones/twitter.png" alt="twitter" class="tamanho-fixo-imagem-redes-sociais"><label for="" class="fonte-footer-conteudo mx-1">Twitter</label>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com">
+                                <img src="icones/instagram.png" alt="instagram" class="tamanho-fixo-imagem-redes-sociais"><label for="" class="fonte-footer-conteudo mx-1">Instagram</label>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="icones/whatsapp.png" alt="whatsapp" class="tamanho-fixo-imagem-redes-sociais"><label for="" class="fonte-footer-conteudo mx-1">11987654321</label>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="cor-branca py-3">
+            <div class="container text-center fonte-footer-teal">
+                <p>Preços e condições exclusivos para o site www.ecommerce.com.br, podendo sofrer alterações sem prévia notificação.</p>
+                <p>CNOVA Comércio Eletrônico S.A. / www.ecommerce.com.br / Rua João Pessoa, N° 83 - Piso Mezaninno - Sala 02 / São Caetano do Sul - SP - CEP: 09520-010 / CNPJ: </p>
+                <p>07.170.938/0001-07 / Inscrição Estadual: 143.631.918.112</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Fim do rodapé da página home do site-->
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!--
+			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		-->
+</body>
+
+</html>
