@@ -81,23 +81,27 @@
         </div>
     </nav>
     <!-- Fim do menu de navegação -->
+
+    <div class="container my-5">
+        <h1 class="h1">Meu carrinho<span class="glyphicon glyphicon-shopping-cart ml-1"></span></h1>
+    </div>
+    <div class="container">
+        <div class="form-inline">
+            <div class="form-group mb-2 mr-2">
+                <label class="">Calcule o frete</label>
+            </div>
+            <div class="form-group mx-sm-3 mb-2 mr-2">
+                <input type="text" class="form-control" placeholder="00000-000">
+            </div>
+            <button type="submit" class="btn btn-default mb-2 cor-teal text-white">OK</button>
+        </div>
+    </div>
     <section>
         <div class="container">
             <div class="row">
-                <div class="col-8">
+                <div class="col-md-8">
                     <div class="my-5">
-                        <h1 class="h1">Meu carrinho<span class="glyphicon glyphicon-shopping-cart ml-1"></span></h1>
-                        <div class="form-group row my-5">
-                            <label class="col-md-3 col-form-label">Calcule o frete</label>
-                            <div class="col-md-3">
-                                <input type="text" class="form-control" placeholder="00000-000">
-                            </div>
-                            <div class="col-md-2">
-                                <input type="button" class="form-control" value="OK">
-                            </div>
-                        </div>
                         <table class="table my-5">
-                            <caption>List of users</caption>
                             <thead>
                                 <tr>
                                     <th scope="col">Produto</th>
@@ -108,23 +112,88 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Mark</td>
+                                    <td><img src="fotos produtos/tv.jpg" class="img-carrinho"></td>
                                     <td>TV LG</td>
-                                    <td>@mdo</td>
+                                    <td><select class="form-control w-50">
+                                            <option value="">1</option>
+                                            <option value="">2</option>
+                                            <option value="">3</option>
+                                            <option value="">4</option>
+                                            <option value="">5</option>
+                                            <option value="">6</option>
+                                            <option value="">7</option>
+                                            <option value="">8</option>
+                                            <option value="">9</option>
+                                            <option value="">10</option>
+                                        </select></td>
+                                    <td>R$ 1299,99</td>
                                 </tr>
                                 <tr>
-                                    <td>Jacob</td>
+                                    <td><img src="fotos produtos/playstation.jpg" class="img-carrinho"></td>
                                     <td>Playstation 4</td>
-                                    <td>@fat</td>
+                                    <td><select class="form-control w-50">
+                                            <option value="">1</option>
+                                            <option value="">2</option>
+                                            <option value="">3</option>
+                                            <option value="">4</option>
+                                            <option value="">5</option>
+                                            <option value="">6</option>
+                                            <option value="">7</option>
+                                            <option value="">8</option>
+                                            <option value="">9</option>
+                                            <option value="">10</option>
+                                        </select></td>
+                                    <td>R$ 3299,99</td>
                                 </tr>
                                 <tr>
-                                    <td>Larry</td>
-                                    <td>the Bird</td>
-                                    <td>@twitter</td>
+                                    <td><img src="fotos produtos/note.jpg" class="img-carrinho"></td>
+                                    <td>Notebook Acer</td>
+                                    <td><select class="form-control w-50">
+                                            <option value="">1</option>
+                                            <option value="">2</option>
+                                            <option value="">3</option>
+                                            <option value="">4</option>
+                                            <option value="">5</option>
+                                            <option value="">6</option>
+                                            <option value="">7</option>
+                                            <option value="">8</option>
+                                            <option value="">9</option>
+                                            <option value="">10</option>
+                                        </select></td>
+                                    <td>R$ 1599,99</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
+                </div>
+                <div class="col-md-4" style="background-color: aliceblue;">
+                    <label class="h3 mb-3">Resumo do pedido</label>
+                    <div class="row my-2">
+                        <div class="col-6">
+                            <p>Subtotal dos produtos</p>
+                        </div>
+                        <div class="col-6">
+                            <p>R$ 4899,98</p>
+                        </div>
+                    </div>
+                    <div class="row my-1">
+                        <div class="col-6">
+                            <p>Frete</p>
+                        </div>
+                        <div class="col-6">
+                            <p>-</p>
+                        </div>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <div class="row my-1">
+                        <div class="col-6">
+                            <h6>Total</h6>
+                        </div>
+                        <div class="col-6">
+                            <h6>R$ 4899,98</h6>
+                        </div>
+                    </div>
+                    <button class="btn cor-teal text-white w-100 mb-5">Continuar</button>
                 </div>
             </div>
         </div>
