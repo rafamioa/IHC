@@ -143,9 +143,18 @@ label {
 	width: 20px;
 }
 
-.fonte-teal-categoria {
+ul, li > a {
 	font-family: "Arial", Sans-serif;
 	color: teal;
 	font-size: 15px;
 }
+
+.img-carrinho{
+    max-width: 100px;
+    min-width: 100px;
+    max-height: 100px;
+    min-height: 100px;
+}
+
+
 
