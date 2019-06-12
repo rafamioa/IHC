@@ -4,19 +4,17 @@
 <head>
 
     <meta charset="utf-8">
-    <title>Página inicial - E-commerce</title>
+    <title>Carrinho de compra</title>
     <link rel="icon" href="imagens/logo-2.png">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
     <link rel="stylesheet" type="icon" href="imagens/logo-2.png">
     <link rel="stylesheet" type="text/css" href="css/glyphicon.css">
-
-
 </head>
 
 <body>
-    <!-- Modal de usuário -->
+    <!-- MODAL USUÁRIO -->
     <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-sm">
             <div class="modal-content">
@@ -27,7 +25,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, explicabo!.</p>
+                    <p>Se você não está cadastrado clique em cadastrar. Se já possui clique em login.</p>
                 </div>
                 <div class="modal-footer">
                     <div class="col-6">
@@ -44,13 +42,13 @@
             </div>
         </div>
     </div>
-    <!-- Fim do modal-->
+    <!-- FIM DO MODAL-->
 
-    <!-- Menu de navegação do site -->
-    <nav class="navbar navbar-expand-md navbar-dark cor-navbar py-3 fixed-top box-shadow-white">
+    <!-- MENU DE NAVEGAÇÃO DO SITE -->
+    <nav class="navbar navbar-expand-md navbar-dark cor-navbar py-3">
         <div class="container">
             <a href="index.html" class="navbar-brand">
-                <img src="imagens/logo-2.png" alt="Logo" width="40" height="40" class="rounded-circle d-inline-block align-top mx-3"><strong class="mx-1 d-inline-block align-top">E-commerce.com</strong>
+                <img src="imagens/logo-2.png" alt="Logo" width="40" height="40" class="rounded-circle d-inline-block align-top mx-3">
             </a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,16 +57,8 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto text-white">
-                    <!-- 
-                <li class="nav-item">
-                    <a class="nav-link mx-3"href="cadastro-cliente.html"><strong>Cadastrar</strong></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link mx-3 fonte"href="login.html"><strong>Logar</strong></a>
-                </li>
-            -->
                     <li class="nav-item ">
-                        <a href="#"><img src="imagens/carrinho-compra.png" alt="usuario" class="tamanho-fixo-imagem-nav mx-3">
+                        <a href="carrinho.html"><img src="imagens/carrinho-compra.png" alt="usuario" class="tamanho-fixo-imagem-nav mx-3">
                         </a>
                     </li>
                     <li class="nav-item ">
@@ -79,7 +69,21 @@
             </div>
         </div>
     </nav>
-    <!-- Fim do menu de navegação -->
+    <!-- FIM DO NENU DE NAVEGAÇÃO -->
+    
+    <!-- MENU DOS PRODUTOS -->
+    <div class="cor-teal box-shadow-black">
+        <div class="container d-flex justify-content-center">
+            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                <div class="btn-group mr-2 " role="group" aria-label="First group">
+                    <button type="button" class="btn text-white font-weight-bold">Telefonia </button>
+                    <button type="button" class="btn text-white font-weight-bold">Móveis </button>
+                    <button type="button" class="btn text-white font-weight-bold">Informática</button>
+                    <button type="button" class="btn text-white font-weight-bold">Eletrodomésticos</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="container my-5">
         <h1 class="h1">Meu carrinho<span class="glyphicon glyphicon-shopping-cart ml-1"></span></h1>
@@ -96,7 +100,7 @@
         </div>
     </div>
     <section>
-        <div class="container">
+        <div class="container shadow p-3 mb-5 bg-white rounded">
             <div class="row">
                 <div class="col-md-8">
                     <div class="my-5">
@@ -125,7 +129,8 @@
                                             <option value="">9</option>
                                             <option value="">10</option>
                                         </select>
-                                        <p class="text-center">remover</p></td>
+                                        <p class="text-center">remover</p>
+                                    </td>
                                     <td>R$ 1299,99</td>
                                 </tr>
                                 <tr align="center">
@@ -143,7 +148,8 @@
                                             <option value="">9</option>
                                             <option value="">10</option>
                                         </select>
-                                        <p class="text-center">remover</p></td>
+                                        <p class="text-center">remover</p>
+                                    </td>
                                     <td>R$ 3299,99</td>
                                 </tr>
                                 <tr align="center">
@@ -161,7 +167,8 @@
                                             <option value="">9</option>
                                             <option value="">10</option>
                                         </select>
-                                        <p class="text-center">remover</p></td>
+                                        <p class="text-center">remover</p>
+                                    </td>
                                     <td>R$ 1599,99</td>
                                 </tr>
                             </tbody>
