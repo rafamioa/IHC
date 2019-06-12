@@ -1,151 +1,157 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">	
-	<title>Cadastro de cliente - E-commerce</title>
-	<link rel="icon" href="imagens/logo-2.png">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Cadastro de cliente</title>
+    <link rel="icon" href="imagens/logo-2.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="icon" href="imagens/logo-2.png">
+    <link rel="icon" src="imagens/logo-2.png">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
 
-	<link rel="icon" src="imagens/logo-2.png">
-	<link rel="stylesheet" type="text/css" href="css/estilo.css">
-	
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
-	<script type="text/javascript" src="js/additional-methods.min.js"></script>
-
-
-	<script type="text/javascript" src="js/jquery.mask.min.js"></script>
-	<script type="text/javascript" src="js/popper.min.js"></script>
-
-	<script type="text/javascript" src="js/validacao.js"></script>
-	<script type="text/javascript" src="js/mascaras.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="js/additional-methods.min.js"></script>
 
 
+    <script type="text/javascript" src="js/jquery.mask.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
 
-	<!-- Estilo da mensagem de erro de validação dos campos cadastro -->
-	<style>
-		.error{
-			color:red
-		}
-	</style>
-	<!-- Fim -->
+    <script type="text/javascript" src="js/validacao.js"></script>
+    <script type="text/javascript" src="js/mascaras.js"></script>
+
+
+
+    <!-- Estilo da mensagem de erro de validação dos campos cadastro -->
+    <style>
+        .error {
+            color: red;
+            font-style: italic;
+            font-size: 12px;
+        }
+
+    </style>
+    <!-- Fim -->
 
 </head>
+
 <body>
 
-	<!-- Menu de navegação do site -->
+    <!-- Menu de navegação do site -->
 
-	<nav class="navbar navbar-expand-md navbar-dark cor-navbar py-3 fixed-top box-shadow-black">
-		<div class="container">
-			<a href="index.html" class="navbar-brand">
-				<img src="../imagens/logo-2.png" alt="Logo" width="40" height="40"class="rounded-circle d-inline-block align-top mx-3"><strong class="mx-1 d-inline-block align-top">E-commerce.com</strong>
-			</a>
-		</div>
-	</nav>
+    <nav class="navbar navbar-expand-md navbar-dark cor-navbar py-3 box-shadow-black">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <img src="imagens/logo-2.png" alt="Logo" width="40" height="40" class="rounded-circle d-inline-block align-top mx-3">
+            </a>
+        </div>
+    </nav>
 
-	<form method="post" id="formCadastro" name="formCadastro">
-		<div class="container my-5 col-md-8 col-10 w-100">
-			<div class="row my-5">
-				<div class="col-12" align="center">
-					<img src="imagens/login.png" class="tamanho-fixo-imagem-login align-top">
-					<label class="h2">
-						Cadastre-se
-					</label>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-6">
-					<div class="form-group">
-						<label for="nome">Nome</label>
-						<input type="text" class="form-control" id="nome" placeholder="Digite o seu nome completo" name="nome">
-					</div>
-				</div>
+    <form method="post" id="formCadastro" name="formCadastro">
+        <div class="container my-5 col-md-8 col-10 w-100">
+            <div class="row my-5">
+                <div class="col-12" align="center">
+                    <img src="imagens/login.png" class="tamanho-fixo-imagem-login align-top">
+                    <label class="h2">
+                        Cadastre-se
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" class="form-control" id="nome" placeholder="Digite o seu nome completo" name="nome">
+                    </div>
+                </div>
 
-				<div class="col-sm-6">
-					<div class="form-group">
-						<label for="cpf">CPF</label>
-						<input type="text" class="form-control" placeholder="Digite o seu cpf" id="cpf" name="cpf">
-					</div>
-				</div>
-			</div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="cpf">CPF</label>
+                        <input type="text" class="form-control" placeholder="Digite o seu cpf" id="cpf" name="cpf">
+                    </div>
+                </div>
+            </div>
 
-			<div class="row">
-				<div class="col-sm-6">
-					<div class="form-group">
-						<label for="">Data de Nascimento</label>
-						<input type="date" class="form-control" id="dataNascimento" name="dataNascimento">
-					</div>
-				</div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="">Data de Nascimento</label>
+                        <input type="date" class="form-control" id="dataNascimento" name="dataNascimento">
+                    </div>
+                </div>
 
-				<div class="col-sm-6">
-					<label for="sexo">Sexo</label><br>
-					<div class="form-check form-check-inline">
-						<input class="form-check-input" type="radio" name="sexo" id="feminino" checked>
-						<label class="form-check-label" for="inlineRadio1" checked>Feminino</label>
-					</div>
-					<div class="form-check form-check-inline">
-						<input class="form-check-input" type="radio" name="sexo" id="masculino">
-						<label class="form-check-label" for="sexo">Masculino</label>
-					</div>
-				</div>
-			</div>
+                <div class="col-sm-6">
+                    <label for="sexo">Sexo</label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="sexo" id="feminino" checked>
+                        <label class="form-check-label" for="inlineRadio1" checked>Feminino</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="sexo" id="masculino">
+                        <label class="form-check-label" for="sexo">Masculino</label>
+                    </div>
+                </div>
+            </div>
 
-			<div class="row">
+            <div class="row">
 
-				<div class="col-sm-6">
-					<div class="form-group">
-						<label for="email">Email</label>
-						<input type="text" class="form-control" placeholder="nome@email.com" id="email" name="email">
-					</div>
-				</div>
-				<div class="col-sm-6">
-					<div class="form-group">
-						<label for="senha">Telefone</label>
-						<input type="text" class="form-control" id="telefone" placeholder="Número do telefone" name="telefone">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="text" class="form-control" placeholder="nome@email.com" id="email" name="email">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="senha">Telefone</label>
+                        <input type="text" class="form-control" id="telefone" placeholder="Número do telefone" name="telefone">
 
-					</div>
-				</div>
+                    </div>
+                </div>
 
-			</div>
+            </div>
 
-			<div class="row">
+            <div class="row">
 
-				<div class="col-sm-6">
-					<div class="form-group">
-						<label for="senha">Senha</label>
-						<input type="password" class="form-control" placeholder="Senha" id="senha" name="senha"data-toggle="tooltip" data-placement="top" title="Tooltip on top">
-					</div>
-				</div>
-				<div class="col-sm-6">
-					<div class="form-group">
-						<label for="senha-repetida">Repita a senha</label>
-						<input type="password" class="form-control" id="senha_repetida" placeholder="Repita a senha" name="senha_repetida">
-					</div>
-				</div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="senha">Senha</label>
+                        <input type="password" class="form-control" placeholder="Senha" id="senha" name="senha" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="senha-repetida">Repita a senha</label>
+                        <input type="password" class="form-control" id="senha_repetida" placeholder="Repita a senha" name="senha_repetida">
+                    </div>
+                </div>
 
-			</div>
-			<div class="form-group" align="center">
-				<input type="submit"value="Cadastrar" class="btn form-control cor-teal text-white p col-12" id="btnCadastrar"></input>
-			</div>
-			<div class="form-group">
-				<p class="text-center">Já possui o cadastro?</p>
-			</div>
-			<div class="form-group" align="center" id="link">
-				<a href="login.html" class="link-teal">Clique aqui para fazer o login</a>
-			</div>
-		</div>
-	</form>
+            </div>
+            <div class="form-group" align="center">
+                <input type="submit" value="Cadastrar" class="btn form-control cor-teal text-white p col-12" id="btnCadastrar"></input>
+            </div>
+            <div class="form-group">
+                <p class="text-center">Já possui o cadastro?</p>
+            </div>
+            <div class="form-group" align="center" id="link">
+                <a href="login.html" class="link-teal">Clique aqui para fazer o login</a>
+            </div>
+        </div>
+    </form>
 
-	<footer>
-		<div class="cor-teal">
-			<div class="container">
-				<p class="text-white text-center py-3">Copyright © 2019 E-commerce</p>
-			</div>
-		</div>
-	</footer>
+    <footer>
+        <div class="cor-teal">
+            <div class="container">
+                <p class="text-white text-center py-3">Copyright © 2019 E-commerce</p>
+            </div>
+        </div>
+    </footer>
 
 
 </body>
+
 </html>
