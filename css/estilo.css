@@ -1,11 +1,10 @@
 .cor-navbar {
-    background-color: teal;
+    background-color: #00b7b8;
 }
 
 body {
     /*background-color: #E5E8E8;*/
-    background-color: white;
-    padding-top: 82px;
+    background-color: #F8F8FF;
 }
 
 .nav-link {
@@ -14,7 +13,6 @@ body {
 
 .fonte-nav {
     font-family: "Arial", Sans-serif;
-    cor: #00fff5;
 }
 
 .fonte-marca {
@@ -34,7 +32,7 @@ body {
 }
 
 .cor-teal {
-    background-color: teal;
+    background-color: #00b7b8;
 }
 
 .fonte-footer-conteudo {
@@ -165,6 +163,29 @@ li > a {
 }
 
 .img-card{
-    max-width: 300px;
+    max-width: 225px;
     max-height: 250px;
+    margin:auto;
+}
+.fonte-cabecalho{
+    color:teal;
+}
+.altura{
+    padding-top: 82px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 90%;
+  }
 }
