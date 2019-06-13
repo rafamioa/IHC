@@ -8,358 +8,419 @@
 <link rel="stylesheet" type="text/css" href="css/estilo.css">
 <link rel="stylesheet" type="icon" href="imagens/logo-2.png">
 <link rel="stylesheet" type="text/css" href="css/glyphicon.css">
+
 <body>
 
-	<!-- Modal de usuário -->
+    <!-- Modal de usuário -->
 
-	<div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-sm">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title">Área do cliente</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, explicabo!.</p>
-				</div>
-				<div class="modal-footer">
-					<div class="col-6">
-						<a href="login.html">
-							<button type="button" class="btn cor-teal text-white w-100">Login</button>
-						</a>	
-					</div>
-					<div class="col-6">
-						<a href="cadastro-cliente.html">
-							<button type="button" class="btn cor-teal text-white w-100">Cadastrar</button>
-						</a>
-					</div>				
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Fim do modal-->
+    <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Área do cliente</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, explicabo!.</p>
+                </div>
+                <div class="modal-footer">
+                    <div class="col-6">
+                        <a href="login.html">
+                            <button type="button" class="btn cor-teal text-white w-100">Login</button>
+                        </a>
+                    </div>
+                    <div class="col-6">
+                        <a href="cadastro-cliente.html">
+                            <button type="button" class="btn cor-teal text-white w-100">Cadastrar</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fim do modal-->
+    <!-- MENU DE NAVEGAÇÃO DO SITE -->
+    <nav class="navbar navbar-expand-md navbar-dark cor-navbar py-3">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <img src="imagens/logo-2.png" alt="Logo" width="40" height="40" class="rounded-circle d-inline-block align-top mx-3 ">
+            </a>
 
-	<!-- Menu de navegação do site -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-	<nav class="navbar navbar-expand-md navbar-dark cor-navbar py-3 box-shadow-black">
-		<div class="container">
-			<a href="index.html" class="navbar-brand">
-				<img src="imagens/logo-2.png" alt="Logo" width="40" height="40"class="rounded-circle d-inline-block align-top mx-3">
-			</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto text-white">
+                    <li class="nav-item ">
+                        <a href="carrinho.html"><img src="imagens/carrinho-compra.png" alt="usuario" class="tamanho-fixo-imagem-nav mx-3">
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="#"><img src="imagens/usuario.png" alt="usuario" class="tamanho-fixo-imagem-nav mx-3" data-toggle="modal" data-target=".bd-example-modal-sm">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- FIM DO NENU DE NAVEGAÇÃO -->
 
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
+    <!-- MENU DOS PRODUTOS -->
+    <div class="cor-teal border-bottom border-white">
+        <div class="container d-flex justify-content-center">
+            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
 
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav ml-auto text-white">
-					<!-- 
-					<li class="nav-item">
-						<a class="nav-link mx-3"href="cadastro-cliente.html"><strong>Cadastrar</strong></a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link mx-3 fonte"href="login.html"><strong>Logar</strong></a>
-					</li>
-				-->
-				<li class="nav-item ">
-					<a href="#"><img src="imagens/carrinho-compra.png" alt="usuario" class="tamanho-fixo-imagem-nav mx-3">
-					</a>
-				</li>
-				<li class="nav-item ">
-					<a href="#"><img src="imagens/usuario.png" alt="usuario" class="tamanho-fixo-imagem-nav mx-3" data-toggle="modal" data-target=".bd-example-modal-sm">
-					</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-</nav>
+                <div class="btn-group cor-teal dropdown">
+                    <button type="button" class="btn dropdown-toggle text-white" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Telefonia
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Celular</a>
+                        <a class="dropdown-item" href="#">Smartphone</a>
+                        <a class="dropdown-item" href="#">Acessórios</a>
+                        <a class="dropdown-item" href="#">Telefone</a>
+                    </div>
+                </div>
 
-<!-- SESSÃO CAROUSEL PRODUTOS -->
-<section>
-	<div class="mx-2">
-		<div id="carousel" class="carousel slide" data-ride="carousel">
-			<ol class="carousel-indicators">
-				<li data-target="#carouselProdutos" data-slide-to="0" class="active"></li>
-				<li data-target="#carouselProdutos" data-slide-to="1"></li>
-				<li data-target="#carouselProdutos" data-slide-to="2"></li>
-			</ol>
-			<div class="carousel-inner">
-				<div class="carousel-item active">
-					<img src="imagens/carousel-1.jpg" class="d-block w-100" alt="livros">
-				</div>
-				<div class="carousel-item">
-					<img src="imagens/carousel-2.jpg" class="d-block w-100" alt="ebooks">
-				</div>
-				<div class="carousel-item">
-					<img src="imagens/carousel-03.png" class="d-block w-100" alt="ebooks">
-				</div>
-			</div>
+                <div class="btn-group cor-teal dropdown">
+                    <button type="button" class="btn dropdown-toggle text-white" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Informática
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Impressora</a>
+                        <a class="dropdown-item" href="#">Projetor</a>
+                        <a class="dropdown-item" href="#">Computador</a>
+                        <a class="dropdown-item" href="#">Notebook</a>
+                    </div>
+                </div>
 
-			<a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="sr-only">Anterior</span>
-			</a>
-			<a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				<span class="sr-only">Próximo</span>
-			</a>
-		</div>
-	</div>
-</section>
-<!-- FIM SESSÃO CAROUSEL PRODUTOS -->
+                <div class="btn-group cor-teal dropdown">
+                    <button type="button" class="btn dropdown-toggle text-white" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Móvel
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Cama</a>
+                        <a class="dropdown-item" href="#">Sofá</a>
+                        <a class="dropdown-item" href="#">Rack</a>
+                    </div>
+                </div>
 
-<!-- MENUBAR E EXIBIÇÃO DOS PRODUTODS -->
-<section>
-	<div class="row mx-1 my-5">
-		<!-- MENUBAR -->
-		<div class="col-2">
-			<ul class="list-unstyled fonte-teal-categoria">
-				<li class="my-1"><strong>Categoria</strong></li>
-				<li><a href="#">Administração</a></li>
-				<li><a href="#">Agropecuária</a></li>
-				<li><a href="#">Arquitetura</a></li>
-				<li><a href="#">Artes</a></li>
-				<li><a href="#">Biografia</a></li>
-				<li><a href="#">Ciência</a></li>
-				<li><a href="#">Ciências exatas</a></li>
-				<li><a href="#">Concursos</a></li>
-				<li><a href="#">Dicionários</a></li>
-				<li><a href="#">Direito</a></li>
-				<li><a href="#">Economia</a></li>
-				<li><a href="#">Engenharia</a></li>
-				<li><a href="#">História</a></li>
-				<li><a href="#">Informática</a></li>
-				<li><a href="#">Literatura</a></li>
-				<li><a href="#">Medicina</a></li>
-				<li><a href="#">Direito</a></li>
+                <div class="btn-group cor-teal dropdown">
+                    <button type="button" class="btn dropdown-toggle text-white" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Eletrodoméstico
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Geladeira</a>
+                        <a class="dropdown-item" href="#">Fogão</a>
+                        <a class="dropdown-item" href="#">Lavadora</a>
+                    </div>
+                </div>
 
-			</ul>
-			<div class="dropdown-divider"></div>
-			<ul class="list-unstyled fonte-teal-categoria">
-				<li class="mx-1"><strong>Desconto</strong></li>
-				<li><div class="form-check">
-					<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-					<label class="form-check-label" for="defaultCheck1">
-						10%
-					</label>
-				</div></li>
-				<li><div class="form-check">
-					<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-					<label class="form-check-label" for="defaultCheck1">
-						10% a 30%
-					</label>
-				</div></li>
-				<li><div class="form-check">
-					<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-					<label class="form-check-label" for="defaultCheck1">
-						30% a 60%
-					</label>
-				</div></li>
-				<li><div class="form-check">
-					<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-					<label class="form-check-label" for="defaultCheck1">
-						60% a 80%
-					</label>
-				</div></li>
-			</ul>
-			<div class="dropdown-divider"></div>
+            </div>
+        </div>
+    </div>
 
-			<ul class="list-unstyled fonte-teal-categoria">
-				<li class="my-1"><strong>Preço</strong></li>
-				<li><div class="form-check">
-					<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-					<label class="form-check-label" for="defaultCheck1">
-						Até R$ 19,90
-					</label>
-				</div></li>
-				<li><div class="form-check">
-					<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-					<label class="form-check-label" for="defaultCheck1">
-						De R$ 19,90 a R$ 29,90
-					</label>
-				</div></li>
-				<li><div class="form-check">
-					<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-					<label class="form-check-label" for="defaultCheck1">
-						De R$ 29,90 a R$ 99,90
-					</label>
-				</div></li>
-				<li><div class="form-check">
-					<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-					<label class="form-check-label" for="defaultCheck1">
-						Acima de R$ 99,90
-					</label>
-				</div></li>
-			</ul>
-		</div>
-		<!-- FIM MENUBAR -->
+    <!-- SESSÃO CAROUSEL PRODUTOS -->
+    <section>
+        <div class="mx-2">
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselProdutos" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselProdutos" data-slide-to="1"></li>
+                    <li data-target="#carouselProdutos" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="imagens/carousel-1.jpg" class="d-block w-100 img-fluid" alt="livros">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagens/carousel-2.jpg" class="d-block w-100 img-fluid" alt="ebooks">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagens/carousel-03.png" class="d-block w-100 img-fluid" alt="ebooks">
+                    </div>
+                </div>
 
-		<!-- EXIBIÇÃO DOS PRODUTOS -->
-		<div class="col-10">
-			<div class="row form-group ml-auto">
-				<div class="col-7">
-				</div>
-				<div class="col-2 mr-auto my-auto" >
-					<label>Ordernar por:</label>
-				</div>
-				<div class="col-3">
-					<select class="ml-auto form-control">
-						<option value="">Mais vendidos</option>
-						<option value="">Menor preço</option>
-						<option value="">Maior preço</option>
-						<option value="">Mais avaliados</option>
-					</select>
-				</div>
-			</div>	
-			<div class="card-group my-5">
-				<div class="card">
-					<img class="card-img-top img-card" src="imagens/livros/use-01.jpg" alt="Card image cap">
-					<div class="card-body">
-						<h5 class="card-title">Card title</h5>
-						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-						<p class="card-text"><small class="fonte-teal-preco">Preço: R$ 46,50</small></p>
-					</div>
-				</div>
-				<div class="card">
-					<img class="card-img-top img-card" src="imagens/livros/use-02.jpg" alt="Card image cap">
-					<div class="card-body">
-						<h5 class="card-title">Card title</h5>
-						<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-						<p class="card-text"><small class="fonte-teal-preco">Preço: R$ 46,50</small></p>
-					</div>
-				</div>
-				<div class="card">
-					<img class="card-img-top img-card" src="imagens/livros/use-03.jpg" alt="Card image cap">
-					<div class="card-body">
-						<h5 class="card-title">Card title</h5>
-						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-						<p class="card-text"><small class="fonte-teal-preco">Preço: R$ 46,50</small></p>
-					</div>
-				</div>
-				<div class="card">
-					<img class="card-img-top img-card" src="imagens/livros/use-03.jpg" alt="Card image cap">
-					<div class="card-body">
-						<h5 class="card-title">Card title</h5>
-						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-						<p class="card-text"><small class="fonte-teal-preco">Preço: R$ 46,50</small></p>
-					</div>
-				</div>
-			</div>
-			<div class="card-group">
-				<div class="card">
-					<img class="card-img-top img-card" src="imagens/livros/use-01.jpg" alt="Card image cap">
-					<div class="card-body">
-						<h5 class="card-title">Card title</h5>
-						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-						<p class="card-text"><small class="fonte-teal-preco">Preço: R$ 46,50</small></p>
-					</div>
-				</div>
-				<div class="card">
-					<img class="card-img-top img-card" src="imagens/livros/use-02.jpg" alt="Card image cap">
-					<div class="card-body">
-						<h5 class="card-title">Card title</h5>
-						<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-						<p class="card-text"><small class="fonte-teal-preco">Preço: R$ 46,50</small></p>
-					</div>
-				</div>
-				<div class="card">
-					<img class="card-img-top img-card" src="imagens/livros/use-03.jpg" alt="Card image cap">
-					<div class="card-body">
-						<h5 class="card-title">Card title</h5>
-						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-						<p class="card-text"><small class="fonte-teal-preco">Preço: R$ 46,50</small></p>
-					</div>
-				</div>
-				<div class="card">
-					<img class="card-img-top img-card" src="imagens/livros/use-03.jpg" alt="Card image cap">
-					<div class="card-body">
-						<h5 class="card-title">Card title</h5>
-						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-						<p class="card-text"><small class="fonte-teal-preco">Preço: R$ 46,50</small></p>
-					</div>
-				</div>
-			</div>
-		</div>
+                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- FIM SESSÃO CAROUSEL PRODUTOS -->
 
+    <!-- MENUBAR E EXIBIÇÃO DOS PRODUTODS -->
+    <section>
+        <div class="row mx-1 my-5">
+            <!-- MENUBAR -->
+            <div class="col-2">
+                <ul class="list-unstyled fonte-teal-categoria">
+                    <li class="my-1"><strong>Categoria</strong></li>
+                    <li><a href="#">Administração</a></li>
+                    <li><a href="#">Agropecuária</a></li>
+                    <li><a href="#">Arquitetura</a></li>
+                    <li><a href="#">Artes</a></li>
+                    <li><a href="#">Biografia</a></li>
+                    <li><a href="#">Ciência</a></li>
+                    <li><a href="#">Ciências exatas</a></li>
+                    <li><a href="#">Concursos</a></li>
+                    <li><a href="#">Dicionários</a></li>
+                    <li><a href="#">Direito</a></li>
+                    <li><a href="#">Economia</a></li>
+                    <li><a href="#">Engenharia</a></li>
+                    <li><a href="#">História</a></li>
+                    <li><a href="#">Informática</a></li>
+                    <li><a href="#">Literatura</a></li>
+                    <li><a href="#">Medicina</a></li>
+                    <li><a href="#">Direito</a></li>
 
-		<!-- FIM EXIBIÇÃO DOS PRODUTOS -->
-	</div>
-</section>
-<!-- FIM MENUBAR E EXIBIÇÃO DOS PRODUTODS -->
+                </ul>
+                <div class="dropdown-divider"></div>
+                <ul class="list-unstyled fonte-teal-categoria">
+                    <li class="mx-1"><strong>Desconto</strong></li>
+                    <li>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                10%
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                10% a 30%
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                30% a 60%
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                60% a 80%
+                            </label>
+                        </div>
+                    </li>
+                </ul>
+                <div class="dropdown-divider"></div>
 
-<!-- RODAPÉ DO SITE -->		
-<footer class="cor-teal py-3">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-4 col-6">
-				<label class="h5 text-white"><strong>Dúvidas Frequentes</strong></label>
-				<ul class="list-unstyled">
-					<li><a href="#"class="fonte-footer-conteudo">Como pagar</a></li>
-					<li><a href="#"class="fonte-footer-conteudo">Fale conosco</a></li>
-					<li><a href="#"class="fonte-footer-conteudo">Trocas e devoluções</a></li>
-					<li><a href="#" class="fonte-footer-conteudo">Sobre entrega</a></li>
-				</ul>
-			</div>
+                <ul class="list-unstyled fonte-teal-categoria">
+                    <li class="my-1"><strong>Preço</strong></li>
+                    <li>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                Até R$ 19,90
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                De R$ 19,90 a R$ 29,90
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                De R$ 29,90 a R$ 99,90
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                Acima de R$ 99,90
+                            </label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- FIM MENUBAR -->
 
-			<div class="col-sm-4 col-6">
-				<label for="" class="h5 text-white"><strong>Formas de Pagamento</strong></label>
-				<ul class="list-unstyled">
-					<li>
-						<img src="icones/visa.png" alt="visa" class="tamanho-fixo-imagem-forma-pagamento"><label for="" class="fonte-footer-conteudo mx-1">Visa</label>
-					</li>
-					<li><img src="icones/mastercard.png" alt="mastercard"class="tamanho-fixo-imagem-forma-pagamento"><label for="" class="fonte-footer-conteudo mx-1">Mastercard</label></li>
-					<li>
-						<img src="icones/paypal.png" alt="paypal"class="tamanho-fixo-imagem-forma-pagamento"><label for="" class="fonte-footer-conteudo mx-1">Paypal</label>
-					</li>
-					<li>
-						<img src="icones/citibank.png" alt="citibank"class="tamanho-fixo-imagem-forma-pagamento"><label for="" class="fonte-footer-conteudo mx-1">Citibank</label>
-					</li>
-				</ul>
-			</div>
+            <!-- EXIBIÇÃO DOS PRODUTOS -->
+            <div class="col-10">
+                <div class="row form-group ml-auto">
+                    <div class="form-inline">
+                        <div class="form-group mb-2 mr-2">
+                            <label class="">Ordernar por:</label>
+                        </div>
+                        <div class="form-group mx-sm-3 mb-2 mr-2">
+                            <select class="ml-auto form-control">
+                                <option value="">Mais vendidos</option>
+                                <option value="">Menor preço</option>
+                                <option value="">Maior preço</option>
+                                <option value="">Mais avaliados</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="card-group my-3">
+                        <div class="card">
+                            <img class="card-img-top img-card" src="imagens/livros/como-01.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Como programar C</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, rerum, culpa. Mollitia, explicabo, pariatur! Est.</p>
+                                <p class="card-text"><small class="fonte-teal-preco">Preço: R$ 139,99</small></p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top img-card" src="imagens/livros/como-02.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">C#: Como Programar</h5>
+                                <p class="card-text">Como usar a linguagem de programação C# a principal linguagem na iniciativa .NET da Microsoft.</p>
+                                <p class="card-text"><small class="fonte-teal-preco">Preço: R$ 319,97</small></p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top img-card" src="imagens/livros/use-01.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Use a cabeça! HTML e CSS</h5>
+                                <p class="card-text">Depois de ler este livro você só não entenderá alguns elementos básicos do HTML</p>
+                                <p class="card-text"><small class="fonte-teal-preco">Preço: R$ 83,90</small></p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top img-card" src="imagens/livros/use-02.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Use a cabeça! Programação JavaScript</h5>
+                                <p class="card-text">Este guia amigo do cérebro ensina tudo sobre a linguagem JavaScript</p>
+                                <p class="card-text"><small class="fonte-teal-preco">Preço: R$ 77,90</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-group">
+                        <div class="card">
+                            <img class="card-img-top img-card" src="imagens/tv.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">TV Samsung</h5>
+                                <p class="card-text">Smart TV LED 49" UHD 4K Samsung</p>
+                                <p class="card-text"><small class="fonte-teal-preco">Preço: R$ 1.339,99</small></p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top img-card" src="imagens/computador.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Computador Samsung</h5>
+                                <p class="card-text">Computador All in One Samsung E3 TV.</p>
+                                <p class="card-text"><small class="fonte-teal-preco">Preço: R$ 1.519,97</small></p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top img-card" src="imagens/lavadora.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Lavadora Consul</h5>
+                                <p class="card-text">Lavadora de Roupas Consul 12Kg CWH12AB</p>
+                                <p class="card-text"><small class="fonte-teal-preco">Preço: R$ 1.553,90</small></p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top img-card" src="imagens/multifuncional.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Multifuncional Epson</h5>
+                                <p class="card-text">Multifuncional Tanque de Tinta Epson EcoTank L4150</p>
+                                <p class="card-text"><small class="fonte-teal-preco">Preço: R$ 777,90</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-			<div class="col-sm-4 col-6">
-				<label for="" class="h5 text-white"><strong>Redes Sociais</strong>
+    <!-- RODAPÉ DO SITE -->
+     <!-- Rodapé do site-->
+    <footer class="cor-teal py-3 my-5" style="margin-top: 100px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-4">
+                    <label class="h5 text-white"><strong>Dúvidas Frequentes</strong></label>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="fonte-footer-conteudo">Como pagar</a></li>
+                        <li><a href="#" class="fonte-footer-conteudo">Fale conosco</a></li>
+                        <li><a href="#" class="fonte-footer-conteudo">Trocas e devoluções</a></li>
+                        <li><a href="#" class="fonte-footer-conteudo">Sobre entrega</a></li>
+                    </ul>
+                </div>
 
-				</label>
-				<ul class="list-unstyled">
-					<li>
-						<a href="https://www.facebook.com">	
-							<img src="icones/facebook.png" alt="facebook" class="tamanho-fixo-imagem-redes-sociais">						
-							<label class="fonte-footer-conteudo mx-1">Facebook</label>
-						</a>
-					</li>
-					<li>
-						<a href="http://www.twitter.com">
-							<img src="icones/twitter.png" alt="twitter"class="tamanho-fixo-imagem-redes-sociais"><label for="" class="fonte-footer-conteudo mx-1">Twitter</label>
-						</a>
-					</li>
-					<li>
-						<a href="https://www.instagram.com">
-							<img src="icones/instagram.png" alt="instagram"class="tamanho-fixo-imagem-redes-sociais"><label for="" class="fonte-footer-conteudo mx-1">Instagram</label>
-						</a>
-					</li>
-					<li>
-						<a href="">
-							<img src="icones/whatsapp.png" alt="whatsapp" class="tamanho-fixo-imagem-redes-sociais"><label for="" class="fonte-footer-conteudo mx-1">11987654321</label>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<div class="cor-branca py-3">
-		<div class="container text-center fonte-footer-teal">
-			<p>Preços e condições exclusivos para o site www.ecommerce.com.br, podendo sofrer alterações sem prévia notificação.</p>
-			<p>CNOVA Comércio Eletrônico S.A. / www.ecommerce.com.br / Rua João Pessoa, N° 83 - Piso Mezaninno - Sala 02 / São Caetano do Sul - SP - CEP: 09520-010 / CNPJ: </p>
-			<p>07.170.938/0001-07 / Inscrição Estadual: 143.631.918.112</p>
-		</div>
-	</div>
-</footer>
-<!-- FIM DO RODAPÉ DO SITE -->		
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/popper.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
+                <div class="col-sm-4 col-4">
+                    <label for="" class="h5 text-white"><strong>Formas de Pagamento</strong></label>
+                    <ul class="list-unstyled">
+                        <li>
+                            <img src="icones/visa.png" alt="visa" class="tamanho-fixo-imagem-forma-pagamento"><label for="" class="fonte-footer-conteudo mx-1">Visa</label>
+                        </li>
+                        <li><img src="icones/mastercard.png" alt="mastercard" class="tamanho-fixo-imagem-forma-pagamento"><label for="" class="fonte-footer-conteudo mx-1">Mastercard</label></li>
+                        <li>
+                            <img src="icones/paypal.png" alt="paypal" class="tamanho-fixo-imagem-forma-pagamento"><label for="" class="fonte-footer-conteudo mx-1">Paypal</label>
+                        </li>
+                        <li>
+                            <img src="icones/citibank.png" alt="citibank" class="tamanho-fixo-imagem-forma-pagamento"><label for="" class="fonte-footer-conteudo mx-1">Citibank</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-4 col-4">
+                    <label for="" class="h5 text-white"><strong>Redes Sociais</strong>
+
+                    </label>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="https://www.facebook.com">
+                                <img src="icones/facebook.png" alt="facebook" class="tamanho-fixo-imagem-redes-sociais">
+                                <label class="fonte-footer-conteudo mx-1">Facebook</label>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.twitter.com">
+                                <img src="icones/twitter.png" alt="twitter" class="tamanho-fixo-imagem-redes-sociais"><label for="" class="fonte-footer-conteudo mx-1">Twitter</label>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com">
+                                <img src="icones/instagram.png" alt="instagram" class="tamanho-fixo-imagem-redes-sociais"><label for="" class="fonte-footer-conteudo mx-1">Instagram</label>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="icones/whatsapp.png" alt="whatsapp" class="tamanho-fixo-imagem-redes-sociais"><label for="" class="fonte-footer-conteudo mx-1">11987654321</label>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="cor-branca py-3">
+            <div class="container text-center fonte-footer-teal">
+                <p>Preços e condições exclusivos para o site www.ecommerce.com.br, podendo sofrer alterações sem prévia notificação.</p>
+                <p>CNOVA Comércio Eletrônico S.A. / www.ecommerce.com.br / Rua João Pessoa, N° 83 - Piso Mezaninno - Sala 02 / São Caetano do Sul - SP - CEP: 09520-010 / CNPJ: </p>
+                <p>07.170.938/0001-07 / Inscrição Estadual: 143.631.918.112</p>
+            </div>
+        </div>
+    </footer>
+    <!-- FIM DO RODAPÉ DO SITE -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
+
 </html>
