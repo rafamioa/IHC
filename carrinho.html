@@ -43,12 +43,11 @@
         </div>
     </div>
     <!-- FIM DO MODAL-->
-
     <!-- MENU DE NAVEGAÇÃO DO SITE -->
     <nav class="navbar navbar-expand-md navbar-dark cor-navbar py-3">
         <div class="container">
             <a href="index.html" class="navbar-brand">
-                <img src="imagens/logo-2.png" alt="Logo" width="40" height="40" class="rounded-circle d-inline-block align-top mx-3">
+                <img src="imagens/logo-2.png" alt="Logo" width="40" height="40" class="rounded-circle d-inline-block align-top mx-3 ">
             </a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,23 +69,64 @@
         </div>
     </nav>
     <!-- FIM DO NENU DE NAVEGAÇÃO -->
-    
+
     <!-- MENU DOS PRODUTOS -->
     <div class="cor-teal box-shadow-black">
         <div class="container d-flex justify-content-center">
             <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-                <div class="btn-group mr-2 " role="group" aria-label="First group">
-                    <button type="button" class="btn text-white font-weight-bold">Telefonia </button>
-                    <button type="button" class="btn text-white font-weight-bold">Móveis </button>
-                    <button type="button" class="btn text-white font-weight-bold">Informática</button>
-                    <button type="button" class="btn text-white font-weight-bold">Eletrodomésticos</button>
+
+                <div class="btn-group cor-teal dropdown">
+                    <button type="button" class="btn dropdown-toggle text-white" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Telefonia
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Celular</a>
+                        <a class="dropdown-item" href="#">Smartphone</a>
+                        <a class="dropdown-item" href="#">Acessórios</a>
+                        <a class="dropdown-item" href="#">Telefone</a>
+                    </div>
                 </div>
+
+                <div class="btn-group cor-teal dropdown">
+                    <button type="button" class="btn dropdown-toggle text-white" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Informática
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Impressora</a>
+                        <a class="dropdown-item" href="#">Projetor</a>
+                        <a class="dropdown-item" href="#">Computador</a>
+                        <a class="dropdown-item" href="#">Notebook</a>
+                    </div>
+                </div>
+
+                <div class="btn-group cor-teal dropdown">
+                    <button type="button" class="btn dropdown-toggle text-white" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Móvel
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Cama</a>
+                        <a class="dropdown-item" href="#">Sofá</a>
+                        <a class="dropdown-item" href="#">Rack</a>
+                    </div>
+                </div>
+
+                <div class="btn-group cor-teal dropdown">
+                    <button type="button" class="btn dropdown-toggle text-white" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Eletrodoméstico
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Geladeira</a>
+                        <a class="dropdown-item" href="#">Fogão</a>
+                        <a class="dropdown-item" href="#">Lavadora</a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
 
     <div class="container my-5">
-        <h1 class="h1">Meu carrinho<span class="glyphicon glyphicon-shopping-cart ml-1"></span></h1>
+        <h1 class="h3">Meu carrinho<span class="glyphicon glyphicon-shopping-cart ml-1"></span></h1>
     </div>
     <div class="container">
         <div class="form-inline">
@@ -176,7 +216,7 @@
                     </div>
                 </div>
                 <div class="col-md-4" style="background-color: aliceblue;">
-                    <label class="h3 mb-3">Resumo do pedido</label>
+                    <label class="h4 mb-3">Resumo do pedido</label>
                     <div class="row my-2">
                         <div class="col-6">
                             <p>Subtotal dos produtos</p>

@@ -142,8 +142,7 @@ label {
     width: 20px;
 }
 
-ul,
-li > a {
+ul,a{
     font-family: "Arial", Sans-serif;
     color: teal;
     font-size: 15px;
@@ -163,8 +162,8 @@ li > a {
 }
 
 .img-card{
-    max-width: 225px;
-    max-height: 250px;
+    max-width: 175px;
+    max-height: 225px;
     margin:auto;
 }
 .fonte-cabecalho{
@@ -174,7 +173,7 @@ li > a {
     padding-top: 82px;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
+/* imagem responsiva */
 @media screen and (max-width: 800px) {
   .column {
     flex: 100%;
@@ -182,10 +181,29 @@ li > a {
   }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+/* imagem responsiva */
 @media screen and (max-width: 600px) {
   .column {
     flex: 100%;
     max-width: 90%;
   }
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    transform: translate3d(5px, 28px, 0px); 
+    top: 0px;
+    left: 0px;
+    will-change: transform;
+}
+.dropdown {
+    display: inline-block; 
+    list-style: none; 
+}
+.dropdown-item:hover{
+    background-color: lightcyan;
+}
+a:link {
+  color: teal;
 }
