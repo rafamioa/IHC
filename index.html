@@ -48,7 +48,7 @@
     <nav class="navbar navbar-expand-md navbar-dark cor-navbar py-3">
         <div class="container">
             <a href="index.html" class="navbar-brand">
-                <img src="imagens/logo-2.png" alt="Logo" width="40" height="40" class="rounded-circle d-inline-block align-top mx-3">
+                <img src="imagens/logo-2.png" alt="Logo" width="40" height="40" class="rounded-circle d-inline-block align-top mx-3 ">
             </a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,17 +70,58 @@
         </div>
     </nav>
     <!-- FIM DO NENU DE NAVEGAÇÃO -->
-    
+
     <!-- MENU DOS PRODUTOS -->
     <div class="cor-teal border-bottom border-white">
         <div class="container d-flex justify-content-center">
             <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-                <div class="btn-group mr-2 " role="group" aria-label="First group">
-                    <button type="button" class="btn text-white font-weight-bold">Telefonia </button>
-                    <button type="button" class="btn text-white font-weight-bold">Móveis </button>
-                    <button type="button" class="btn text-white font-weight-bold">Informática</button>
-                    <button type="button" class="btn text-white font-weight-bold">Eletrodomésticos</button>
+
+                <div class="btn-group cor-teal dropdown">
+                    <button type="button" class="btn dropdown-toggle text-white" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Telefonia
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Celular</a>
+                        <a class="dropdown-item" href="#">Smartphone</a>
+                        <a class="dropdown-item" href="#">Acessórios</a>
+                        <a class="dropdown-item" href="#">Telefone</a>
+                    </div>
                 </div>
+
+                <div class="btn-group cor-teal dropdown">
+                    <button type="button" class="btn dropdown-toggle text-white" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Informática
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Impressora</a>
+                        <a class="dropdown-item" href="#">Projetor</a>
+                        <a class="dropdown-item" href="#">Computador</a>
+                        <a class="dropdown-item" href="#">Notebook</a>
+                    </div>
+                </div>
+
+                <div class="btn-group cor-teal dropdown">
+                    <button type="button" class="btn dropdown-toggle text-white" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Móvel
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Cama</a>
+                        <a class="dropdown-item" href="#">Sofá</a>
+                        <a class="dropdown-item" href="#">Rack</a>
+                    </div>
+                </div>
+
+                <div class="btn-group cor-teal dropdown">
+                    <button type="button" class="btn dropdown-toggle text-white" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Eletrodoméstico
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Geladeira</a>
+                        <a class="dropdown-item" href="#">Fogão</a>
+                        <a class="dropdown-item" href="#">Lavadora</a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
@@ -95,21 +136,27 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="imagens/carousel-eletrodomesticos.png" class="d-block img-fluid w-100 img-carousel" alt="ebooks">
+                    <a href="produtos.html">
+                        <img src="imagens/carousel-eletrodomesticos.png" class="d-block img-fluid w-100" alt="imagem">
+                    </a>
                     <div class="carousel-caption">
                         <h1 class="h2 fonte-carousel"></h1>
                         <p class="fonte-carousel"></p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="imagens/carousel-tecnologia.png" class="d-block img-fluid w-100" alt="Audio Books">
+                    <a href="produtos.html">
+                        <img src="imagens/carousel-tecnologia.png" class="d-block img-fluid w-100" alt="imagem">
+                    </a>
                     <div class="carousel-caption">
                         <h1 class="h2 fonte-carousel"></h1>
                         <p class="fonte-carousel"></p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="imagens/carousel-moveis.png" class="d-block img-fluid w-100" alt="livros">
+                    <a href="produtos.html">
+                        <img src="imagens/carousel-moveis.png" class="d-block img-fluid w-100" alt="imagem">
+                    </a>
                     <div class="carousel-caption">
                         <h1 class="h2 fonte-carousel"></h1>
                         <p class="fonte-carousel display-5"></p>
@@ -129,13 +176,13 @@
 
     <section class="my-5">
         <div class="container">
-            <h3 class="fonte-cabecalho my-5 text-sm-left">Melhores ofertas de livros</h3>
+            <h3 class="fonte-cabecalho my-5 h4">Melhores ofertas de livros</h3>
             <div class="row">
                 <div class="col-6 col-lg-3 mb-2">
-                    <div class="card column">
+                    <div class="card">
                         <img src="imagens/livros/como-01.jpg" alt="" class="card-img-top img-card">
                         <div class="card-body">
-                            <h4 class="card-title">Como programar C</h4>
+                            <h4 class="h5">Como programar C</h4>
                             <h6 class="card-subtitle text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, rerum, culpa. Mollitia, explicabo, pariatur! Est.</h6>
                         </div>
                         <div class="card-footer">
@@ -144,10 +191,10 @@
                     </div>
                 </div>
                 <div class="col-6 col-lg-3 mb-2">
-                    <div class="card column">
+                    <div class="card">
                         <img src="imagens/livros/como-02.jpg" alt="" class="card-img-top img-card">
                         <div class="card-body">
-                            <h4 class="card-title text-sm-left">C#: Como Programar</h4>
+                            <h4 class="h5">C#: Como Programar</h4>
                             <h6 class="card-subtitle text-muted">Como usar a linguagem de programação C# a principal linguagem na iniciativa .NET da Microsoft. </h6>
                         </div>
                         <div class="card-footer">
@@ -156,10 +203,10 @@
                     </div>
                 </div>
                 <div class="col-6 col-lg-3">
-                    <div class="card column">
+                    <div class="card">
                         <img src="imagens/livros/use-01.jpg" alt="" class="card-img-top img-card">
                         <div class="card-body">
-                            <h4 class="card-title">Use a cabeça! HTML e CSS</h4>
+                            <h4 class="h5">Use a cabeça! HTML e CSS</h4>
                             <h6 class="card-subtitle text-muted">Depois de ler este livro você só não entenderá alguns elementos básicos do HTML</h6>
                         </div>
                         <div class="card-footer">
@@ -168,14 +215,14 @@
                     </div>
                 </div>
                 <div class="col-6  col-lg-3">
-                    <div class="card column">
+                    <div class="card">
                         <img src="imagens/livros/use-02.jpg" alt="" class="card-img-top img-card">
                         <div class="card-body">
-                            <h4 class="card-title">Use a cabeça! Programação JavaScript</h4>
+                            <h4 class="h5">Use a cabeça! Programação JavaScript</h4>
                             <h6 class="card-subtitle text-muted">Este guia amigo do cérebro ensina tudo sobre a linguagem JavaScript</h6>
                         </div>
                         <div class="card-footer">
-                            <h6 class="fonte-teal-preco">R$ 777, 90</h6>
+                            <h6 class="fonte-teal-preco">R$ 77, 90</h6>
                         </div>
                     </div>
                 </div>
@@ -186,13 +233,13 @@
     <!-- CARDS MELHORES OFERTAS-->
     <section class="my-5">
         <div class="container">
-            <h3 class="fonte-cabecalho my-5">Melhores ofertas</h3>
+            <h3 class="fonte-cabecalho my-5 h4">Melhores ofertas</h3>
             <div class="row">
                 <div class="col-6 col-lg-3 mb-2">
-                    <div class="card column">
+                    <div class="card">
                         <img src="imagens/tv.jpg" alt="" class="card-img-top img-card">
                         <div class="card-body">
-                            <h4 class="card-title">TV Samsung</h4>
+                            <h4 class="h5">TV Samsung</h4>
                             <h6 class="card-subtitle text-muted">Smart TV LED 49" UHD 4K Samsung</h6>
                         </div>
                         <div class="card-footer">
@@ -201,10 +248,10 @@
                     </div>
                 </div>
                 <div class="col-6 col-lg-3 mb-2">
-                    <div class="card column">
+                    <div class="card">
                         <img src="imagens/computador.jpg" alt="" class="card-img-top img-card">
                         <div class="card-body">
-                            <h4 class="card-title">Computador Samsung</h4>
+                            <h4 class="h5">Computador Samsung</h4>
                             <h6 class="card-subtitle text-muted">Computador All in One Samsung E3 TV. </h6>
                         </div>
                         <div class="card-footer">
@@ -213,10 +260,10 @@
                     </div>
                 </div>
                 <div class="col-6 col-lg-3">
-                    <div class="card column">
+                    <div class="card">
                         <img src="imagens/lavadora.jpg" alt="" class="card-img-top img-card">
                         <div class="card-body">
-                            <h4 class="card-title">Lavadora Consul </h4>
+                            <h4 class="h5">Lavadora Consul </h4>
                             <h6 class="card-subtitle text-muted">Lavadora de Roupas Consul 12Kg CWH12AB</h6>
                         </div>
                         <div class="card-footer">
@@ -225,10 +272,10 @@
                     </div>
                 </div>
                 <div class="col-6  col-lg-3">
-                    <div class="card column">
+                    <div class="card">
                         <img src="imagens/multifuncional.jpg" alt="" class="card-img-top img-card">
                         <div class="card-body">
-                            <h4 class="card-title">Multifuncional Epson</h4>
+                            <h4 class="h5">Multifuncional Epson</h4>
                             <h6 class="card-subtitle text-muted">Multifuncional Tanque de Tinta Epson EcoTank L4150</h6>
                         </div>
                         <div class="card-footer">
