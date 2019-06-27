@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
     <link rel="stylesheet" type="icon" href="imagens/logo-2.png">
     <link rel="stylesheet" type="text/css" href="css/glyphicon.css">
+    <meta name="viewport" content="width=device-width">
 </head>
 
 <body>
@@ -44,32 +45,33 @@
     </div>
     <!-- FIM DO MODAL-->
     <!-- MENU DE NAVEGAÇÃO DO SITE -->
-    <nav class="navbar navbar-expand-md navbar-dark cor-navbar py-3">
-        <div class="container">
-            <a href="index.html" class="navbar-brand">
-                <img src="imagens/logo-2.png" alt="Logo" width="40" height="40" class="rounded-circle d-inline-block align-top mx-3 ">
-            </a>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark cor-navbar py-3 w-100">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">
+                    <img src="imagens/logo-2.png" alt="Logo" width="40" height="40" class="rounded-circle d-inline-block align-top mx-3 ">
+                </a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto text-white">
-                    <li class="nav-item ">
-                        <a href="carrinho.html"><img src="imagens/carrinho-compra.png" alt="usuario" class="tamanho-fixo-imagem-nav mx-3">
-                        </a>
-                    </li>
-                    <li class="nav-item ">
-                        <a href="#"><img src="imagens/usuario.png" alt="usuario" class="tamanho-fixo-imagem-nav mx-3" data-toggle="modal" data-target=".bd-example-modal-sm">
-                        </a>
-                    </li>
-                </ul>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto text-white">
+                        <li class="nav-item ">
+                            <a href="carrinho.html"><img src="imagens/carrinho-compra.png" alt="usuario" class="tamanho-fixo-imagem-nav mx-3">
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="#"><img src="imagens/usuario.png" alt="usuario" class="tamanho-fixo-imagem-nav mx-3" data-toggle="modal" data-target=".bd-example-modal-sm">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
     <!-- FIM DO NENU DE NAVEGAÇÃO -->
-
     <!-- MENU DOS PRODUTOS -->
     <div class="cor-teal box-shadow-black">
         <div class="container d-flex justify-content-center">
@@ -130,19 +132,21 @@
     </div>
     <div class="container">
         <div class="form-inline">
-            <div class="form-group mb-2 mr-2">
-                <label class="">Calcule o frete</label>
+            <div class="form-group mb-2 col-md-3 col-lg-2">
+                <label>Calcule o frete</label>
             </div>
-            <div class="form-group mx-sm-3 mb-2 mr-2">
-                <input type="text" class="form-control" placeholder="00000-000">
+            <div class="form-group mb-2 col-sm-12 col-md-3">
+                <input type="text" class="form-control w-100" placeholder="00000-000">
             </div>
-            <button type="submit" class="btn btn-default mb-2 cor-teal text-white">OK</button>
+            <div class="form-group col-sm-12 col-md-1">
+                <button type="submit" class="btn btn-default mb-2 cor-teal text-white">OK</button>
+            </div>
         </div>
     </div>
     <section>
         <div class="container shadow p-3 mb-5 bg-white rounded">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-xs-12 col-md-8 m-0">
                     <div class="my-5">
                         <table class="table my-5">
                             <thead>
@@ -157,7 +161,8 @@
                                 <tr align="center">
                                     <td><img src="fotos produtos/tv.jpg" class="img-carrinho justifi-center"></td>
                                     <td>TV LG</td>
-                                    <td align="center"><select class="form-control w-75">
+                                    <td align="center">
+                                        <select class="form-control">
                                             <option value="">1</option>
                                             <option value="">2</option>
                                             <option value="">3</option>
@@ -169,14 +174,15 @@
                                             <option value="">9</option>
                                             <option value="">10</option>
                                         </select>
-                                        <p class="text-center">remover</p>
+                                        <a href="#">remover</a>
                                     </td>
                                     <td>R$ 1299,99</td>
                                 </tr>
                                 <tr align="center">
-                                    <td><img src="fotos produtos/playstation.jpg" class="img-carrinho"></td>
-                                    <td>Playstation 4</td>
-                                    <td><select class="form-control w-75">
+                                    <td><img src="fotos produtos/rack.jpg" class="img-carrinho justifi-center"></td>
+                                    <td>Rack</td>
+                                    <td align="center">
+                                        <select class="form-control">
                                             <option value="">1</option>
                                             <option value="">2</option>
                                             <option value="">3</option>
@@ -188,14 +194,15 @@
                                             <option value="">9</option>
                                             <option value="">10</option>
                                         </select>
-                                        <p class="text-center">remover</p>
+                                        <a href="#">remover</a>
                                     </td>
-                                    <td>R$ 3299,99</td>
+                                    <td>R$ 699,99</td>
                                 </tr>
                                 <tr align="center">
-                                    <td><img src="fotos produtos/note.jpg" class="img-carrinho"></td>
-                                    <td>Notebook Acer</td>
-                                    <td><select class="form-control w-75">
+                                    <td><img src="fotos produtos/fogao.jpg" class="img-carrinho justifi-center"></td>
+                                    <td>Fogão</td>
+                                    <td align="center">
+                                        <select class="form-control">
                                             <option value="">1</option>
                                             <option value="">2</option>
                                             <option value="">3</option>
@@ -207,15 +214,15 @@
                                             <option value="">9</option>
                                             <option value="">10</option>
                                         </select>
-                                        <p class="text-center">remover</p>
+                                        <a href="#">remover</a>
                                     </td>
-                                    <td>R$ 1599,99</td>
+                                    <td>R$ 799,99</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
-                <div class="col-md-4" style="background-color: aliceblue;">
+                <div class="col-xs-12 col-md-4" style="background-color: aliceblue;">
                     <label class="h4 mb-3">Resumo do pedido</label>
                     <div class="row my-2">
                         <div class="col-6">
@@ -248,10 +255,10 @@
         </div>
     </section>
     <!-- Rodapé do site-->
-    <footer class="cor-teal py-3">
+    <footer class="cor-teal py-3 my-5" style="margin-top: 100px;">
         <div class="container">
             <div class="row">
-                <div class="col-sm-4 col-6">
+                <div class="col-xs-12 col-md-4">
                     <label class="h5 text-white"><strong>Dúvidas Frequentes</strong></label>
                     <ul class="list-unstyled">
                         <li><a href="#" class="fonte-footer-conteudo">Como pagar</a></li>
@@ -261,7 +268,7 @@
                     </ul>
                 </div>
 
-                <div class="col-sm-4 col-6">
+                <div class="col-xs-12 col-md-4">
                     <label for="" class="h5 text-white"><strong>Formas de Pagamento</strong></label>
                     <ul class="list-unstyled">
                         <li>
@@ -277,7 +284,7 @@
                     </ul>
                 </div>
 
-                <div class="col-sm-4 col-6">
+                <div class="col-xs-12 col-md-4">
                     <label for="" class="h5 text-white"><strong>Redes Sociais</strong>
 
                     </label>
@@ -316,17 +323,11 @@
         </div>
     </footer>
 
+
     <!-- Fim do rodapé da página home do site-->
 
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
-    <!--
-			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-		-->
-</body>
-
-</html>
+</body></html>
