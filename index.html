@@ -60,6 +60,16 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto text-white">
+                        <li class="nav-item">
+                            <form action="" class="navbar-form">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Procurar...">
+                                </div>
+                            </form>
+                        </li>
+                        <li class="nav-item">
+                            <input type="submit" class="btn btn-light ml-2" value="Buscar">
+                        </li>
                         <li class="nav-item ">
                             <a href="carrinho.html"><img src="imagens/carrinho-compra.png" alt="usuario" class="tamanho-fixo-imagem-nav mx-3">
                             </a>
@@ -68,15 +78,66 @@
                             <a href="#"><img src="imagens/usuario.png" alt="usuario" class="tamanho-fixo-imagem-nav mx-3" data-toggle="modal" data-target=".bd-example-modal-sm">
                             </a>
                         </li>
+
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
     <!-- FIM DO NENU DE NAVEGAÇÃO -->
-    <nav>
+    <!-- MENU DOS PRODUTOS -->
+    <header>
+        <nav class="navbar navbar-expand-lg cor-teal border-bottom ">
+            <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarProdutos" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+            </button>
 
-    </nav>
+            <div class="collapse navbar-collapse" id="navbarProdutos">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white h5" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Informática
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Roteadores</a>
+                            <a class="dropdown-item" href="#">Computadores</a>
+                            <a class="dropdown-item" href="#">Notebooks</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white h5" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Eletrodomésticos
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Fogões</a>
+                            <a class="dropdown-item" href="#">Geladeiras</a>
+                            <a class="dropdown-item" href="#">Lavadoras</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white h5" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Móveis
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Racks</a>
+                            <a class="dropdown-item" href="#">Camas</a>
+                            <a class="dropdown-item" href="#">Sofás</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white h5" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Telefonia
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Celulares</a>
+                            <a class="dropdown-item" href="#">Smartphones</a>
+                            <a class="dropdown-item" href="#">Telefones</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     <!-- CAROUSEL EXIBINDO AS OFERTAS EM DESTAQUE -->
     <section>
         <div id="carousel" class="carousel slide carousel-fluid" data-ride="carousel">
@@ -315,6 +376,4 @@
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-</body>
-
-</html>
+</body></html>
