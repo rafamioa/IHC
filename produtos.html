@@ -8,11 +8,11 @@
 <link rel="stylesheet" type="text/css" href="css/estilo.css">
 <link rel="stylesheet" type="icon" href="imagens/logo-2.png">
 <link rel="stylesheet" type="text/css" href="css/glyphicon.css">
+<link rel="stylesheet" type="text/css" href="css/animate.css">
 <meta name="viewport" content="width=device-width">
 <body>
 
-    <!-- Modal de usuário -->
-
+   <!-- MODAL USUÁRIO -->
     <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-sm">
             <div class="modal-content">
@@ -23,7 +23,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, explicabo!.</p>
+                    <p>Se você não está cadastrado clique em cadastrar. Se já possui clique em login.</p>
                 </div>
                 <div class="modal-footer">
                     <div class="col-6">
@@ -40,12 +40,12 @@
             </div>
         </div>
     </div>
-    <!-- Fim do modal-->
-    <!-- MENU DE NAVEGAÇÃO DO SITE -->
+    <!-- FIM DO MODAL-->
+  <!-- MENU DE NAVEGAÇÃO DO SITE -->
     <header>
         <nav class="navbar navbar-expand-md navbar-dark cor-navbar py-3">
             <div class="container">
-                <a href="index.html" class="navbar-brand">
+                <a href="index.html" class="navbar-brand img-circle zoom">
                     <img src="imagens/logo-2.png" alt="Logo" width="40" height="40" class="rounded-circle d-inline-block align-top mx-3 ">
                 </a>
 
@@ -56,21 +56,19 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto text-white">
                         <li class="nav-item">
-                            <form action="" class="navbar-form">
-                                <div class="form-group">
+                                <div class="input-group-sm mt-2">
                                     <input type="text" class="form-control" placeholder="Procurar...">
                                 </div>
-                            </form>
                         </li>
                         <li class="nav-item">
-                            <input type="submit" class="btn btn-light ml-2" value="Buscar">
+                            <input type="submit" class="btn btn-light ml-2 btn-sm mt-2 mr-3" value="Buscar">
                         </li>
                         <li class="nav-item ">
-                            <a href="carrinho.html"><img src="imagens/carrinho-compra.png" alt="usuario" class="tamanho-fixo-imagem-nav mx-3">
+                            <a href="carrinho.html"><img src="imagens/carrinho-compra.png" alt="usuario" class="tamanho-fixo-imagem-nav mx-3 zoom">
                             </a>
                         </li>
                         <li class="nav-item ">
-                            <a href="#"><img src="imagens/usuario.png" alt="usuario" class="tamanho-fixo-imagem-nav mx-3" data-toggle="modal" data-target=".bd-example-modal-sm">
+                            <a href="#"><img src="imagens/usuario.png" alt="usuario" class="tamanho-fixo-imagem-nav mx-3 zoom" data-toggle="modal" data-target=".bd-example-modal-sm">
                             </a>
                         </li>
 
@@ -88,9 +86,9 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarProdutos">
-                <ul class="navbar-nav mx-auto">
+                <ul class="navbar-nav mx-auto font-weight-bold h6">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white h5" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle text-white font-weight-bold h6 text-uppercase" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Informática
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -100,7 +98,7 @@
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white h5" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle text-white font-weight-bold h6 text-uppercase" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Eletrodomésticos
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -110,7 +108,7 @@
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white h5" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle text-white font-weight-bold h6 text-uppercase" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Móveis
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -120,7 +118,7 @@
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white h5" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle text-white font-weight-bold h6 text-uppercase" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Telefonia
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -273,8 +271,8 @@
                             </select>
                         </div>
                     </div>
-                    <div class="card-group my-3">
-                        <div class="card">
+                    <div class="card-group my-3  wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="card zoom mx-2">
                             <img class="card-img-top img-card" src="imagens/livros/como-01.jpg" alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title">Como programar C</h5>
@@ -282,7 +280,7 @@
                                 <p class="card-text"><small class="fonte-teal-preco">Preço: R$ 139,99</small></p>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card zoom mx-2">
                             <img class="card-img-top img-card" src="imagens/livros/como-02.jpg" alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title">C#: Como Programar</h5>
@@ -290,7 +288,7 @@
                                 <p class="card-text"><small class="fonte-teal-preco">Preço: R$ 319,97</small></p>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card zoom mx-2">
                             <img class="card-img-top img-card" src="imagens/livros/use-01.jpg" alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title">Use a cabeça! HTML e CSS</h5>
@@ -298,7 +296,7 @@
                                 <p class="card-text"><small class="fonte-teal-preco">Preço: R$ 83,90</small></p>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card zoom mx-2">
                             <img class="card-img-top img-card" src="imagens/livros/use-02.jpg" alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title">Use a cabeça! Programação JavaScript</h5>
@@ -307,8 +305,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-group">
-                        <div class="card">
+                    <div class="card-group   wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="card zoom mx-2">
                             <img class="card-img-top img-card" src="imagens/tv.jpg" alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title">TV Samsung</h5>
@@ -316,7 +314,7 @@
                                 <p class="card-text"><small class="fonte-teal-preco">Preço: R$ 1.339,99</small></p>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card zoom mx-2">
                             <img class="card-img-top img-card" src="imagens/computador.jpg" alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title">Computador Samsung</h5>
@@ -324,7 +322,7 @@
                                 <p class="card-text"><small class="fonte-teal-preco">Preço: R$ 1.519,97</small></p>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card zoom mx-2">
                             <img class="card-img-top img-card" src="imagens/lavadora.jpg" alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title">Lavadora Consul</h5>
@@ -332,7 +330,7 @@
                                 <p class="card-text"><small class="fonte-teal-preco">Preço: R$ 1.553,90</small></p>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card zoom mx-2">
                             <img class="card-img-top img-card" src="imagens/multifuncional.jpg" alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title">Multifuncional Epson</h5>
@@ -421,6 +419,12 @@
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/wow.min.js"></script>
+    <script>
+        $(function(){
+            new WOW().init();
+        });
+    </script>
 </body>
 
 </html>

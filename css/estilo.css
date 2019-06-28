@@ -207,3 +207,10 @@ ul,a{
 a:link {
   color: teal;
 }
+.zoom {
+  transition: transform .2s;
+}
+
+.zoom:hover {
+  transform: scale(1.1);
+}
